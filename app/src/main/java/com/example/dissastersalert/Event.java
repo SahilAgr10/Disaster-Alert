@@ -22,4 +22,8 @@ public class Event {
         time = eventTime;
         tsunamiAlert = eventTsunamiAlert;
     }
+
+    public long getTime() {
+        return time;
+    }
 }

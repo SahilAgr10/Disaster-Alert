@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
     /** URL to query the USGS dataset for earthquake information */
     //private static final String USGS_REQUEST_URL ="https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2012-01-01&endtime=2012-12-01&minmagnitude=6";
-    private static final String USGS_REQUEST_URL = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2014-01-01&endtime=2014-12-01&minmagnitude=7";
-    //private static final String USGS_REQUEST_URL = "https://tsunami.incois.gov.in/TEWS/displaybulletinslatestcomms.jsp?type=NTWC&eventId=incois2020jtgaa&aos=public&currBullNo=3&latestBullNo=4&exemp=permit";
+    private static final String USGS_REQUEST_URL = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2021-01-01&endtime=2021-12-01&minmagnitude=8";
+    //private static final String USGS_REQUEST_URL ="https://tsunami.incois.gov.in/TEWS/displaybulletinslatestcomms.jsp?type=NTWC&eventId=incois2020jtgaa&aos=public&currBullNo=3&latestBullNo=4&exemp=permit";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
