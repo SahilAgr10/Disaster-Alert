@@ -38,18 +38,18 @@ public class MainActivity extends AppCompatActivity {
         task.execute();
     }
 
-    private void updateUi(Event earthquake) {
+    private void updateUi(Event Earth) {
         // Display the earthquake title in the UI
         TextView titleTextView = (TextView) findViewById(R.id.title);
-        titleTextView.setText(earthquake.title);
+        titleTextView.setText(Earth.title);
 
         // Display the earthquake date in the UI
         TextView dateTextView = (TextView) findViewById(R.id.date);
-        dateTextView.setText(getDateString(earthquake.time));
+        dateTextView.setText(getDateString(Earth.time));
 
         // Display whether or not there was a tsunami alert in the UI
         TextView tsunamiTextView = (TextView) findViewById(R.id.tsunami_alert);
-        tsunamiTextView.setText(getTsunamiAlertString(earthquake.tsunamiAlert));
+        tsunamiTextView.setText(getTsunamiAlertString(Earth.tsunamiAlert));
     }
 
     /**
@@ -94,10 +94,10 @@ public class MainActivity extends AppCompatActivity {
             }
 
             // Extract relevant fields from the JSON response and create an {@link Event} object
-            Event earthquake = extractFeatureFromJson(jsonResponse);
+            Event eartheee = extractFeatureFromJson(jsonResponse);
 
             // Return the {@link Event} object as the result fo the {@link TsunamiAsyncTask}
-            return earthquake;
+            return eartheee;
         }
 
         /**
@@ -105,12 +105,12 @@ public class MainActivity extends AppCompatActivity {
          * {@link TsunamiAsyncTask}).
          */
         @Override
-        protected void onPostExecute(Event earthquake) {
-            if (earthquake == null) {
+        protected void onPostExecute(Event Earth) {
+            if (Earth == null) {
                 return;
             }
 
-            updateUi(earthquake);
+            updateUi(Earth);
         }
 
         /**

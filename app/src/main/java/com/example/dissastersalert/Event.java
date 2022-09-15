@@ -26,4 +26,12 @@ public class Event {
     public long getTime() {
         return time;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public int getTsunamiAlert() {
+        return tsunamiAlert;
+    }
 }
